@@ -1,0 +1,36 @@
+#!/usr/bin/env python
+from optparse import OptionParser
+import os
+import re
+
+parser = OptionParser()
+parser.add_option("-s", "--std", dest="std", help="use STD as standard", metavar="STD")
+parser.add_option("-v", "--verbose", action="store_true", default=True, dest="verbose", help="print status messages to stdout", metavar="VERBOSE")
+parser.add_option("-l", "--link", action="store_true", default=True, dest="link", help="link compiled files and libraries", metavar="LINK")
+parser.add_option("-x", "--execute", action="store_true", default=False, dest="execute", help="link and execute resulting program", metavar="EXECUTE")
+
+(options, args) = parser.parse_args()
+
+options.link = options.link or options.execute
+
+try:
+    file = args[0][:-2] if args[0][-2:] == ".c" else args[0]
+except Exception as e:
+    raise Exception("Missing mandatory argument FILE")
+
+if options.std == None:
+    std = "ansi"
+else:
+    std = options.std.lower()
+
+if std not in ["ansi"]:
+    raise Exception("Invalid standard argument: \"" + std + "\"")
+
+os.system("gcc -c" +
+                    " -" + std +
+                    (" -Wall" if options.verbose else "") +
+                    " " + file + ".c")
+if options.link:
+    os.system("gcc -o " + file + " " + file + ".o -lm")
+if options.execute:
+    os.system("./" + file)
