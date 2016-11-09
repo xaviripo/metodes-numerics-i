@@ -18,8 +18,8 @@ int main(void) {
 	printf("\n");
 
 	temp = (e+1)/(2*(N+1));
-	for(n = 2*N; n >= N; n--) {
-		temp = (e-temp)/(n+1);
+	for(n = 2*N-1; n >= N; n--) {
+		temp = (e-temp)/(N+1);
 		printf("n: %d, y_n: %25.15f\n", n, temp);
 	}
 
