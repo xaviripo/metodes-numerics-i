@@ -1,0 +1,3 @@
+/home/xaviripo/ClionProjects/Practica 11/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/xaviripo/ClionProjects/Practica 11/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/xaviripo/ClionProjects/Practica 11/cmake-build-debug/CMakeFiles/Practica_11.dir
