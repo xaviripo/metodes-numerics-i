@@ -1,0 +1,4 @@
+"D:\Xavier\CLion 2016.3.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Xavier\Repos\mnu1\p8
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/Xavier/Repos/mnu1/p8/cmake-build-debug

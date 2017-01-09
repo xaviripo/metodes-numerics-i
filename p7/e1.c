@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include "source.h"
 
-
-
-int main2() {
+int e1() {
 
     int n;
     printf("Enter n: ");
     scanf("%d", &n);
-    printf("\n");
 
     int M;
     printf("Enter M: ");

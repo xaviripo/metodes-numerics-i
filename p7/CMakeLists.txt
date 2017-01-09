@@ -3,6 +3,6 @@ project(p7)
 
 set(CMAKE_C_STANDARD 11)
 
-set(SOURCE_FILES e1.c e2.c)
+set(SOURCE_FILES e1.c e2.c source.c source.h main.c e1.h e2.h)
 add_executable(p7 ${SOURCE_FILES})
 target_link_libraries(p7 m)
