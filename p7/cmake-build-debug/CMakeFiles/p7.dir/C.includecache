@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xaviripo/Uni/Q3/mnu1/p7/e1.c
+stdio.h
+-
+stdlib.h
+-
+
+/home/xaviripo/Uni/Q3/mnu1/p7/e2.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+

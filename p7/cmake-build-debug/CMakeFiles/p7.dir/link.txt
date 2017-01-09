@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/p7.dir/e1.c.o CMakeFiles/p7.dir/e2.c.o  -o p7 -lm 

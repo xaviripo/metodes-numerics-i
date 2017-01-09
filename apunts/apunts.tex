@@ -1,0 +1,118 @@
+\documentclass[a4paper,12pt]{article}
+
+% Imports
+\usepackage[catalan]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath} % mathbf and mathbb
+\usepackage{amsfonts} % font stuff
+\usepackage{amstext}
+\usepackage{amsthm} % style for \theorem and co
+\usepackage{lmodern} % font with all characters
+\usepackage{fancyhdr} % header and footer
+\usepackage{amssymb} % \nexists and other symbols
+
+% Header
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Xavier Ripoll Echeveste}
+\lhead{Mètodes Numèrics I, 2n parcial}
+\rfoot{\thepage}
+
+% Sections
+\theoremstyle{definition}
+\newtheorem{definition}{Definició}
+\newtheorem*{notation}{Notació}
+
+\theoremstyle{plain}
+\newtheorem{theorem}{Teorema}[section]
+\newtheorem{corollary}{Corol·lari}[theorem]
+\newtheorem{lemma}[theorem]{Lema}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Nota}
+
+\begin{document}
+
+\section{Interpolació}
+
+\begin{definition}[Interpolació]
+Diem que una funció $f$ interpola una altra funció $g$ en els punts
+$x_0,\allowbreak\dots,\allowbreak x_n$ del domini de $f$ i de $g$ si
+$f(x_i) = g(x_i),\allowbreak 0\leq i\leq n$.
+\end{definition}
+
+\begin{theorem}[Existència i unicitat del polinomi interpolador]
+Siguin $(x_0, f(x_0)),\allowbreak\dots,\allowbreak(x_n, f(x_n))$ parells de
+nombres reals arbitraris amb $x_i \neq x_j$ si $i \neq j$. Llavors, existeix un
+únic polinomi $p$ de grau menor o igual a $n$ tal que
+$p(x_i) = f(x_i),\allowbreak 0\leq i\leq n$.
+\end{theorem}
+
+\begin{proof}
+Per inducció sobre $n$.
+
+El cas $n=0$ és trivial: prenem el polinomi constant $p(x)=f(x_0)$.
+
+Per $n=1$ tenim:
+\begin{equation*}
+p(x)=f(x_0)+\frac{f(x_1)-f(x_0)}{x_1-x_0}(x-x_0)
+\end{equation*}
+
+Suposem ara que existeix un polinomi $p_{n-1}$ que interpola $f$ en els punts
+$x_0,\allowbreak\dots,\allowbreak x_{n-1}$. Llavors, imposem que:
+\begin{equation*}
+p_n(x) = p_{n-1}(x) + \frac{f(x_n)-p_{n-1}(x)}{(x_n-x_0)\cdots(x_n-x_{n-1})}
+(x-x_0)\cdots(x-x_{n-1})
+\end{equation*}
+
+Comprovem que $p_n$ interpoli tots els punts
+$x_0,\allowbreak\dots,\allowbreak x_n$. Per a $x_i, 0\leq i< n$, es té que
+l'últim sumand es cancel·la i tan sols queda $p_{n-1}(x_i)$, que per hipòtesi
+d'inducció interpola $f$.
+
+En canvi, per a $x_n$ tenim:
+\begin{equation*}
+\begin{split}
+p_n(x_n) &= p_{n-1}(x_n) + \frac{f(x_n)-p_{n-1}(x_n)}
+{(x_n-x_0)\cdots(x_n-x_{n-1})}
+(x_n-x_0)\cdots(x_n-x_{n-1}) =\\\\
+&= p_{n-1}(x_n) + f(x_n) - p_{n-1}(x_n) = f(x_n)
+\end{split}
+\end{equation*}
+
+Per demostrar la unicitat, suposem que existeixen dos polinomis interpoladors
+diferents $p$ i $q$ amb aquestes propietats. Sigui $r(x)=p(x)-q(x)$.
+Cada $x_i, 0\leq i\leq n$ és una arrel de $r$, però $r$ és de grau menor o
+igual a $n$ i té $n+1$ arrels; pel teorema fonamental de l'àlgebra, $r=0$ i
+per tant $p=q$.
+\end{proof}\newpage
+
+\begin{notation}
+Siguin $x_0,\allowbreak\dots,\allowbreak x_n\in\mathbb R$, llavors
+$\langle x_0,\allowbreak\dots,\allowbreak x_n\rangle$ és l'interval tancat més
+petit que conté $x_0,\allowbreak\dots,\allowbreak x_n$.
+\end{notation}
+
+\begin{theorem}[Error en la interpolació]
+Sigui $f$ amb $n+1$ derivades contínues en
+$\langle x_0,\allowbreak\dots,\allowbreak x_n\rangle$. Si $p$ és un polinomi
+de gran menor o igual a $n$ que interpola a $f$ en
+$x_0,\allowbreak\dots,\allowbreak x_n$, aleshores:
+\begin{equation*}
+f(x)-p(x)=\frac{f^{(n+1)}(\xi(x))}{(n+1)!}(x-x_0)\cdots(x-x_{n-1})
+\end{equation*}
+
+Per a algun $\xi(x)\in\langle x_0,\allowbreak\dots,\allowbreak x_n\rangle$.
+
+\end{theorem}
+
+\begin{proof}
+Fixem $x\in\langle x_0,\allowbreak\dots,\allowbreak x_n\rangle\setminus
+\{x_0,\allowbreak\dots,\allowbreak x_n\}$ arbitrària. Definim:
+\begin{equation}
+G(x) = f(x) - p(x) - R
+\end{equation}
+\end{proof}
+
+\end{document}
