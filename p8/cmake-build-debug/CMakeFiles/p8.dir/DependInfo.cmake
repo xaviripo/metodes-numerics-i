@@ -4,9 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/e1.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/e1.c.obj"
+  "D:/Xavier/Repos/mnu1/p8/e1.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/e1.c.obj"
   "D:/Xavier/Repos/mnu1/p8/main.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/main.c.obj"
   "D:/Xavier/Repos/mnu1/p8/source.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/source.c.obj"
+  "D:/Xavier/Repos/mnu1/p8/tridiagonal.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/tridiagonal.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

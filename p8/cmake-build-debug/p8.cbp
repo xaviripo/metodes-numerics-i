@@ -80,7 +80,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/cmake-build-debug/e1.c">
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/e1.c">
 			<Option target="p8"/>
 		</Unit>
 		<Unit filename="D:/Xavier/Repos/mnu1/p8/e1.h">
@@ -93,6 +93,9 @@
 			<Option target="p8"/>
 		</Unit>
 		<Unit filename="D:/Xavier/Repos/mnu1/p8/source.h">
+			<Option target="p8"/>
+		</Unit>
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/tridiagonal.c">
 			<Option target="p8"/>
 		</Unit>
 		<Unit filename="D:/Xavier/Repos/mnu1/p8/tridiagonal.h">

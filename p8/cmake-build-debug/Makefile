@@ -203,6 +203,33 @@ source.c.s:
 	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/source.c.s
 .PHONY : source.c.s
 
+tridiagonal.obj: tridiagonal.c.obj
+
+.PHONY : tridiagonal.obj
+
+# target to build an object file
+tridiagonal.c.obj:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.obj
+.PHONY : tridiagonal.c.obj
+
+tridiagonal.i: tridiagonal.c.i
+
+.PHONY : tridiagonal.i
+
+# target to preprocess a source file
+tridiagonal.c.i:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.i
+.PHONY : tridiagonal.c.i
+
+tridiagonal.s: tridiagonal.c.s
+
+.PHONY : tridiagonal.s
+
+# target to generate assembly for a file
+tridiagonal.c.s:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.s
+.PHONY : tridiagonal.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -221,6 +248,9 @@ help:
 	@echo ... source.obj
 	@echo ... source.i
 	@echo ... source.s
+	@echo ... tridiagonal.obj
+	@echo ... tridiagonal.i
+	@echo ... tridiagonal.s
 .PHONY : help
 
 
