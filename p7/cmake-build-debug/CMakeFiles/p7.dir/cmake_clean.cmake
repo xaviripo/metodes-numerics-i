@@ -1,12 +1,10 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p7.dir/e1.c.obj"
-  "CMakeFiles/p7.dir/e2.c.obj"
-  "CMakeFiles/p7.dir/source.c.obj"
-  "CMakeFiles/p7.dir/main.c.obj"
+  "CMakeFiles/p7.dir/e1.c.o"
+  "CMakeFiles/p7.dir/e2.c.o"
+  "CMakeFiles/p7.dir/source.c.o"
+  "CMakeFiles/p7.dir/main.c.o"
   "p7.pdb"
-  "p7.exe"
-  "p7.exe.manifest"
-  "libp7.dll.a"
+  "p7"
 )
 
 # Per-language clean rules from dependency scanning.

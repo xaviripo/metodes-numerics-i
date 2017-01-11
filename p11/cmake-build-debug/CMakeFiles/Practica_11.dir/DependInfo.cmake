@@ -4,7 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "D:/Xavier/Repos/mnu1/Practica 11/main.c" "D:/Xavier/Repos/mnu1/Practica 11/cmake-build-debug/CMakeFiles/Practica_11.dir/main.c.obj"
+  "/home/xaviripo/Uni/Q3/mnu1/p11/e1.c" "/home/xaviripo/Uni/Q3/mnu1/p11/cmake-build-debug/CMakeFiles/Practica_11.dir/e1.c.o"
+  "/home/xaviripo/Uni/Q3/mnu1/p11/main.c" "/home/xaviripo/Uni/Q3/mnu1/p11/cmake-build-debug/CMakeFiles/Practica_11.dir/main.c.o"
+  "/home/xaviripo/Uni/Q3/mnu1/p11/source.c" "/home/xaviripo/Uni/Q3/mnu1/p11/cmake-build-debug/CMakeFiles/Practica_11.dir/source.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

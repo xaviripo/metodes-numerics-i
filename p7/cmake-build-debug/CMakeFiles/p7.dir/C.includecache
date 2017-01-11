@@ -6,29 +6,37 @@
 
 #IncludeRegexTransform: 
 
-D:/Xavier/Repos/mnu1/p7/e1.c
+/home/xaviripo/Uni/Q3/mnu1/p7/e1.c
 stdio.h
 -
 stdlib.h
 -
-header.h
-D:/Xavier/Repos/mnu1/p7/header.h
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p7/source.h
 
-D:/Xavier/Repos/mnu1/p7/e2.c
+/home/xaviripo/Uni/Q3/mnu1/p7/e1.h
+
+/home/xaviripo/Uni/Q3/mnu1/p7/e2.c
 stdio.h
 -
 stdlib.h
 -
 math.h
 -
-header.h
-D:/Xavier/Repos/mnu1/p7/header.h
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p7/source.h
 
-D:/Xavier/Repos/mnu1/p7/header.h
+/home/xaviripo/Uni/Q3/mnu1/p7/e2.h
 
-D:/Xavier/Repos/mnu1/p7/main.c
-header.h
-D:/Xavier/Repos/mnu1/p7/header.h
+/home/xaviripo/Uni/Q3/mnu1/p7/main.c
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p7/source.h
+e1.h
+/home/xaviripo/Uni/Q3/mnu1/p7/e1.h
+e2.h
+/home/xaviripo/Uni/Q3/mnu1/p7/e2.h
 
-D:/Xavier/Repos/mnu1/p7/source.c
+/home/xaviripo/Uni/Q3/mnu1/p7/source.c
+
+/home/xaviripo/Uni/Q3/mnu1/p7/source.h
 

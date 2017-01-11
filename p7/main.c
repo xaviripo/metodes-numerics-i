@@ -3,5 +3,5 @@
 #include "e2.h"
 
 int main() {
-    return e1();
+    return e2();
 }

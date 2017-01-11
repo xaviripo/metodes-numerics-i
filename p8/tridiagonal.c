@@ -1,4 +1,6 @@
 /*RESOL UNA MATRIU DIAGONAL BANDA*/
+#include <stdio.h>
+
 /*	(b	c	0	0	0)
 	(a	b	c	0	0)
 	(0	a	b	c	0)
@@ -33,20 +35,32 @@ int d3_GERARD(int n, double *a, double *b, double *c, double *f, double tol) {
  * @param b Main diagonal of M, taken elements a[0] through a[n-1] inclusive
  * @param c Superdiagonal of M, taken elements a[0] through a[n-2] inclusive
  * @param f Initially contains the constants c, replaced with the solution x
- * @param tol Tolerance for 0
+ * @param tol Tolerance for 0 (currently unused, kept for function header backwards compatibility)
  */
 void d3(int n, double *a, double *b, double *c, double *f, double tol) {
 
     c[0] /= b[0];
     f[0] /= b[0];
 
+    printf("Before d3\n");
+    for(int i = 0; i < n; i++) {
+        printf("f[%d] = %25.16lf\n", i, f[i]);
+    }
+
+    double aux;
     for (int i = 1; i < n; i++) {
-        double m = 1.0/(b[i] - a[i]*c[i-1]);
-        c[i] *= m;
-        f[i] = (f[i] - a[i]*f[i-1])*m;
+        aux = 1.0/(b[i] - a[i]*c[i-1]);
+        c[i] *= aux;
+        f[i] = (f[i] - a[i]*f[i-1])*aux;
     }
 
     for (int i = n-2; i >= 0; i--) {
         f[i] -= c[i]*f[i + 1];
     }
+
+    printf("After d3\n");
+    for(int i = 0; i < n; i++) {
+        printf("f[%d] = %25.16lf\n", i, f[i]);
+    }
+
 }

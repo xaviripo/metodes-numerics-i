@@ -6,25 +6,25 @@
 
 #IncludeRegexTransform: 
 
-D:/Xavier/Repos/mnu1/p8/e1.c
+/home/xaviripo/Uni/Q3/mnu1/p8/e1.c
 stdio.h
 -
 stdlib.h
 -
 source.h
-D:/Xavier/Repos/mnu1/p8/source.h
+/home/xaviripo/Uni/Q3/mnu1/p8/source.h
 
-D:/Xavier/Repos/mnu1/p8/e1.h
+/home/xaviripo/Uni/Q3/mnu1/p8/e1.h
 
-D:/Xavier/Repos/mnu1/p8/main.c
+/home/xaviripo/Uni/Q3/mnu1/p8/main.c
 stdio.h
 -
 stdlib.h
 -
 e1.h
-D:/Xavier/Repos/mnu1/p8/e1.h
+/home/xaviripo/Uni/Q3/mnu1/p8/e1.h
 
-D:/Xavier/Repos/mnu1/p8/source.c
+/home/xaviripo/Uni/Q3/mnu1/p8/source.c
 stdio.h
 -
 stdlib.h
@@ -32,11 +32,13 @@ stdlib.h
 math.h
 -
 tridiagonal.h
-D:/Xavier/Repos/mnu1/p8/tridiagonal.h
+/home/xaviripo/Uni/Q3/mnu1/p8/tridiagonal.h
 
-D:/Xavier/Repos/mnu1/p8/source.h
+/home/xaviripo/Uni/Q3/mnu1/p8/source.h
 
-D:/Xavier/Repos/mnu1/p8/tridiagonal.c
+/home/xaviripo/Uni/Q3/mnu1/p8/tridiagonal.c
+stdio.h
+-
 
-D:/Xavier/Repos/mnu1/p8/tridiagonal.h
+/home/xaviripo/Uni/Q3/mnu1/p8/tridiagonal.h
 

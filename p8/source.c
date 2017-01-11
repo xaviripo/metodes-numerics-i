@@ -41,12 +41,12 @@ void natural_cubic_splines(int n, int m, double* x, double* y) {
         M[i-1] = (y[i+1] - y[i])/h[i+1] - (y[i] - y[i-1])/h[i];
     }
 
-    // CHECK HERE IS VALUES M[0] AND M[n] ARE STILL 0
-    printf("M[0] = %25.16lf\n", M[0]);
-    printf("M[n] = %25.16lf\n", M[n]);
-
     // Solve the tridiagonal system, the solutions are stored in M
     d3(n-1, a, b, c, M, 1e-10);
+
+    for(int i = 0; i <= n; i++) {
+        printf("M[%d] = %25.16lf\n", i, M[i]);
+    }
 
     // Calculate A and B
     for(int i = 0; i < n; i++) {

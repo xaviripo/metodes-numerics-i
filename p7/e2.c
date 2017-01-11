@@ -35,13 +35,14 @@ int e2() {
 
 
     double h;
+    double z;
 
     if(chebyshev == 0) { // Equidistant
 
         h = (b - a)/n;
 
         x[0] = a;
-        for(int i = 1; i <= n; i++) {
+        for(int i = 0; i <= n; i++) {
             x[i] = x[i-1] + h;
             f[i] = feval(x[i]);
         }
@@ -60,6 +61,7 @@ int e2() {
     difdiv(n, x, f);
 
     // Print the polynomial for copying and pasting in gnuplot
+    /*
     for(int i = 0; i <= n; i++) {
         printf("%+lf", f[i]);
         for(int j = 0; j < i; j++) {
@@ -67,29 +69,26 @@ int e2() {
         }
     }
     printf("\n");
+    */
 
-    double k = (x[n] - x[0])/M;
-    double z = x[0];
+    h = (x[n] - x[0])/M;
+    z = x[0];
 
     double pv, fv;
+
     for(int i = 0; i <= M; i++) {
+        // Evalutation of both the function and the polynomial
         pv = horner(z, n, x, f);
         fv = feval(z);
+
+        // Print results and error
         printf("p(%+25.16lf) = %+25.16lf\n", z, pv);
         printf("f(%+25.16lf) = %+25.16lf\n", z, fv);
-        printf("f error = %+.8lf\n", fv - pv);
-        printf("x error = %d\n", z==x[i]);
+        printf("error = %.8lf\n", fabs(fv - pv));
         printf("\n");
-        z += k;
-    }
 
-    for(int i = 0; i <= n; i++) {
-        pv = horner(x[i], n, x, f);
-        fv = feval(x[i]);
-        printf("p(%+25.16lf) = %+25.16lf\n", x[i], pv);
-        printf("f(%+25.16lf) = %+25.16lf\n", x[i], fv);
-        printf("f error = %+.8lf\n", fv - pv);
-        printf("\n");
+        // Next point
+        z += h;
     }
 
     return 0;

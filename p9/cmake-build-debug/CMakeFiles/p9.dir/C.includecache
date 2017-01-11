@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/xaviripo/Uni/Q3/mnu1/p9/e1.c
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p9/source.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/e1.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/e2.c
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p9/source.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/e2.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/e3.c
+source.h
+/home/xaviripo/Uni/Q3/mnu1/p9/source.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/main.c
+stdio.h
+-
+e1.h
+/home/xaviripo/Uni/Q3/mnu1/p9/e1.h
+e2.h
+/home/xaviripo/Uni/Q3/mnu1/p9/e2.h
+
+/home/xaviripo/Uni/Q3/mnu1/p9/source.c
+stdio.h
+-
+stdlib.h
+-
+math.h
+-
+
+/home/xaviripo/Uni/Q3/mnu1/p9/source.h
+

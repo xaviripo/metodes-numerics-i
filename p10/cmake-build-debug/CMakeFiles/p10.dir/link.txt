@@ -1,0 +1,1 @@
+/usr/bin/cc  -g   CMakeFiles/p10.dir/main.c.o CMakeFiles/p10.dir/e1.c.o CMakeFiles/p10.dir/source.c.o CMakeFiles/p10.dir/e2.c.o  -o p10 -lm 

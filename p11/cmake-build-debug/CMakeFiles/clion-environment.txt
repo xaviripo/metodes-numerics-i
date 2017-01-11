@@ -1,2 +1,1 @@
-ToolSet: 3.22@C:\MinGW
-CMake: 3.6.3@D:\Xavier\CLion 2016.3.1\bin\cmake\bin\cmake.exe
+CMake: 3.6.3@/home/xaviripo/.local/share/umake/ide/clion/bin/cmake/bin/cmake
