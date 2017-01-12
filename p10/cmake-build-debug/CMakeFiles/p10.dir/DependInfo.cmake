@@ -4,10 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/xaviripo/Uni/Q3/mnu1/p10/e1.c" "/home/xaviripo/Uni/Q3/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/e1.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p10/e2.c" "/home/xaviripo/Uni/Q3/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/e2.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p10/main.c" "/home/xaviripo/Uni/Q3/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/main.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p10/source.c" "/home/xaviripo/Uni/Q3/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/source.c.o"
+  "D:/Xavier/Repos/mnu1/p10/common.c" "D:/Xavier/Repos/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/common.c.obj"
+  "D:/Xavier/Repos/mnu1/p10/exercices.c" "D:/Xavier/Repos/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/exercices.c.obj"
+  "D:/Xavier/Repos/mnu1/p10/main.c" "D:/Xavier/Repos/mnu1/p10/cmake-build-debug/CMakeFiles/p10.dir/main.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

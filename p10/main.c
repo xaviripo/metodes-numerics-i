@@ -1,9 +1,5 @@
-#include "e1.h"
-#include "e2.h"
+#include "exercices.h"
 
 int main(void) {
-
-    e2();
-
-    return 0;
+    return p10_e2();
 }

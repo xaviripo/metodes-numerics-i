@@ -1,7 +1,6 @@
-#include "source.h"
-#include "e1.h"
-#include "e2.h"
+#include "common.h"
+#include "exercices.h"
 
 int main() {
-    return e2();
+    return p7_e1();
 }

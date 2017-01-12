@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p10.dir/main.c.o"
-  "CMakeFiles/p10.dir/e1.c.o"
-  "CMakeFiles/p10.dir/source.c.o"
-  "CMakeFiles/p10.dir/e2.c.o"
+  "CMakeFiles/p10.dir/main.c.obj"
+  "CMakeFiles/p10.dir/common.c.obj"
+  "CMakeFiles/p10.dir/exercices.c.obj"
   "p10.pdb"
-  "p10"
+  "p10.exe"
+  "p10.exe.manifest"
+  "libp10.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

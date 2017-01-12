@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/xaviripo/Uni/Q3/mnu1/p8/e1.c" "/home/xaviripo/Uni/Q3/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/e1.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p8/main.c" "/home/xaviripo/Uni/Q3/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/main.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p8/source.c" "/home/xaviripo/Uni/Q3/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/source.c.o"
-  "/home/xaviripo/Uni/Q3/mnu1/p8/tridiagonal.c" "/home/xaviripo/Uni/Q3/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/tridiagonal.c.o"
+  "D:/Xavier/Repos/mnu1/p8/e1.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/e1.c.obj"
+  "D:/Xavier/Repos/mnu1/p8/main.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/main.c.obj"
+  "D:/Xavier/Repos/mnu1/p8/source.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/source.c.obj"
+  "D:/Xavier/Repos/mnu1/p8/tridiagonal.c" "D:/Xavier/Repos/mnu1/p8/cmake-build-debug/CMakeFiles/p8.dir/tridiagonal.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

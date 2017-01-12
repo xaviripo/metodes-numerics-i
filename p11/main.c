@@ -1,8 +1,8 @@
-#include "e1.h"
+#include "exercices.h"
 
 int main(int argc, char* argv) {
 
-    e1();
+    p11_e1();
 
     return 0;
 }

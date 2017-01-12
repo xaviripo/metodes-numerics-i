@@ -1,4 +1,4 @@
-/home/xaviripo/.local/share/umake/ide/clion/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/xaviripo/Uni/Q3/mnu1/p9
+"D:\Xavier\CLion 2016.3.1\bin\cmake\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" D:\Xavier\Repos\mnu1\p9
 -- Configuring done
 -- Generating done
--- Build files have been written to: /home/xaviripo/Uni/Q3/mnu1/p9/cmake-build-debug
+-- Build files have been written to: D:/Xavier/Repos/mnu1/p9/cmake-build-debug

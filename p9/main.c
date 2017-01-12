@@ -1,10 +1,6 @@
 #include <stdio.h>
-#include "e1.h"
-#include "e2.h"
+#include "exercices.h"
 
 int main() {
-
-    e3();
-
-    return 0;
+    return p9_e1();
 }

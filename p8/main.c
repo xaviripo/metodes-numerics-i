@@ -1,9 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "e1.h"
+#include "exercices.h"
 
 int main() {
-
-    e1();
-
+    return p8_e1();
 }

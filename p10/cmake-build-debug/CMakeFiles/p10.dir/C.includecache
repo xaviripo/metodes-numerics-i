@@ -6,31 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/xaviripo/Uni/Q3/mnu1/p10/e1.c
-stdio.h
--
-math.h
--
-source.h
-/home/xaviripo/Uni/Q3/mnu1/p10/source.h
-
-/home/xaviripo/Uni/Q3/mnu1/p10/e1.h
-
-/home/xaviripo/Uni/Q3/mnu1/p10/e2.c
-stdio.h
--
-source.h
-/home/xaviripo/Uni/Q3/mnu1/p10/source.h
-
-/home/xaviripo/Uni/Q3/mnu1/p10/e2.h
-
-/home/xaviripo/Uni/Q3/mnu1/p10/main.c
-e1.h
-/home/xaviripo/Uni/Q3/mnu1/p10/e1.h
-e2.h
-/home/xaviripo/Uni/Q3/mnu1/p10/e2.h
-
-/home/xaviripo/Uni/Q3/mnu1/p10/source.c
+D:/Xavier/Repos/mnu1/p10/common.c
 stdio.h
 -
 stdlib.h
@@ -38,5 +14,19 @@ stdlib.h
 math.h
 -
 
-/home/xaviripo/Uni/Q3/mnu1/p10/source.h
+D:/Xavier/Repos/mnu1/p10/common.h
+
+D:/Xavier/Repos/mnu1/p10/exercices.c
+stdio.h
+-
+math.h
+-
+common.h
+D:/Xavier/Repos/mnu1/p10/common.h
+
+D:/Xavier/Repos/mnu1/p10/exercices.h
+
+D:/Xavier/Repos/mnu1/p10/main.c
+exercices.h
+D:/Xavier/Repos/mnu1/p10/exercices.h
 

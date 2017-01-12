@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/p8.dir/main.c.o"
-  "CMakeFiles/p8.dir/source.c.o"
-  "CMakeFiles/p8.dir/tridiagonal.c.o"
-  "CMakeFiles/p8.dir/e1.c.o"
+  "CMakeFiles/p8.dir/main.c.obj"
+  "CMakeFiles/p8.dir/source.c.obj"
+  "CMakeFiles/p8.dir/tridiagonal.c.obj"
+  "CMakeFiles/p8.dir/e1.c.obj"
   "p8.pdb"
-  "p8"
+  "p8.exe"
+  "p8.exe.manifest"
+  "libp8.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.
