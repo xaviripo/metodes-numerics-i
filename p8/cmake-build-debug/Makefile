@@ -122,32 +122,59 @@ p8/fast:
 	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/build
 .PHONY : p8/fast
 
-e1.obj: e1.c.obj
+common.obj: common.c.obj
 
-.PHONY : e1.obj
+.PHONY : common.obj
 
 # target to build an object file
-e1.c.obj:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/e1.c.obj
-.PHONY : e1.c.obj
+common.c.obj:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/common.c.obj
+.PHONY : common.c.obj
 
-e1.i: e1.c.i
+common.i: common.c.i
 
-.PHONY : e1.i
+.PHONY : common.i
 
 # target to preprocess a source file
-e1.c.i:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/e1.c.i
-.PHONY : e1.c.i
+common.c.i:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/common.c.i
+.PHONY : common.c.i
 
-e1.s: e1.c.s
+common.s: common.c.s
 
-.PHONY : e1.s
+.PHONY : common.s
 
 # target to generate assembly for a file
-e1.c.s:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/e1.c.s
-.PHONY : e1.c.s
+common.c.s:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/common.c.s
+.PHONY : common.c.s
+
+exercices.obj: exercices.c.obj
+
+.PHONY : exercices.obj
+
+# target to build an object file
+exercices.c.obj:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/exercices.c.obj
+.PHONY : exercices.c.obj
+
+exercices.i: exercices.c.i
+
+.PHONY : exercices.i
+
+# target to preprocess a source file
+exercices.c.i:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/exercices.c.i
+.PHONY : exercices.c.i
+
+exercices.s: exercices.c.s
+
+.PHONY : exercices.s
+
+# target to generate assembly for a file
+exercices.c.s:
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/exercices.c.s
+.PHONY : exercices.c.s
 
 main.obj: main.c.obj
 
@@ -176,60 +203,6 @@ main.c.s:
 	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/main.c.s
 .PHONY : main.c.s
 
-source.obj: source.c.obj
-
-.PHONY : source.obj
-
-# target to build an object file
-source.c.obj:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/source.c.obj
-.PHONY : source.c.obj
-
-source.i: source.c.i
-
-.PHONY : source.i
-
-# target to preprocess a source file
-source.c.i:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/source.c.i
-.PHONY : source.c.i
-
-source.s: source.c.s
-
-.PHONY : source.s
-
-# target to generate assembly for a file
-source.c.s:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/source.c.s
-.PHONY : source.c.s
-
-tridiagonal.obj: tridiagonal.c.obj
-
-.PHONY : tridiagonal.obj
-
-# target to build an object file
-tridiagonal.c.obj:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.obj
-.PHONY : tridiagonal.c.obj
-
-tridiagonal.i: tridiagonal.c.i
-
-.PHONY : tridiagonal.i
-
-# target to preprocess a source file
-tridiagonal.c.i:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.i
-.PHONY : tridiagonal.c.i
-
-tridiagonal.s: tridiagonal.c.s
-
-.PHONY : tridiagonal.s
-
-# target to generate assembly for a file
-tridiagonal.c.s:
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.s
-.PHONY : tridiagonal.c.s
-
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -239,18 +212,15 @@ help:
 	@echo ... rebuild_cache
 	@echo ... p8
 	@echo ... edit_cache
-	@echo ... e1.obj
-	@echo ... e1.i
-	@echo ... e1.s
+	@echo ... common.obj
+	@echo ... common.i
+	@echo ... common.s
+	@echo ... exercices.obj
+	@echo ... exercices.i
+	@echo ... exercices.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... source.obj
-	@echo ... source.i
-	@echo ... source.s
-	@echo ... tridiagonal.obj
-	@echo ... tridiagonal.i
-	@echo ... tridiagonal.s
 .PHONY : help
 
 

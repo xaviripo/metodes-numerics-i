@@ -80,97 +80,71 @@ CMakeFiles/p8.dir/main.c.obj.provides: CMakeFiles/p8.dir/main.c.obj.requires
 CMakeFiles/p8.dir/main.c.obj.provides.build: CMakeFiles/p8.dir/main.c.obj
 
 
-CMakeFiles/p8.dir/source.c.obj: CMakeFiles/p8.dir/flags.make
-CMakeFiles/p8.dir/source.c.obj: ../source.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p8.dir/source.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p8.dir\source.c.obj   -c D:\Xavier\Repos\mnu1\p8\source.c
+CMakeFiles/p8.dir/common.c.obj: CMakeFiles/p8.dir/flags.make
+CMakeFiles/p8.dir/common.c.obj: ../common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/p8.dir/common.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p8.dir\common.c.obj   -c D:\Xavier\Repos\mnu1\p8\common.c
 
-CMakeFiles/p8.dir/source.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p8.dir/source.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p8\source.c > CMakeFiles\p8.dir\source.c.i
+CMakeFiles/p8.dir/common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p8.dir/common.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p8\common.c > CMakeFiles\p8.dir\common.c.i
 
-CMakeFiles/p8.dir/source.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p8.dir/source.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p8\source.c -o CMakeFiles\p8.dir\source.c.s
+CMakeFiles/p8.dir/common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p8.dir/common.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p8\common.c -o CMakeFiles\p8.dir\common.c.s
 
-CMakeFiles/p8.dir/source.c.obj.requires:
+CMakeFiles/p8.dir/common.c.obj.requires:
 
-.PHONY : CMakeFiles/p8.dir/source.c.obj.requires
+.PHONY : CMakeFiles/p8.dir/common.c.obj.requires
 
-CMakeFiles/p8.dir/source.c.obj.provides: CMakeFiles/p8.dir/source.c.obj.requires
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/source.c.obj.provides.build
-.PHONY : CMakeFiles/p8.dir/source.c.obj.provides
+CMakeFiles/p8.dir/common.c.obj.provides: CMakeFiles/p8.dir/common.c.obj.requires
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/common.c.obj.provides.build
+.PHONY : CMakeFiles/p8.dir/common.c.obj.provides
 
-CMakeFiles/p8.dir/source.c.obj.provides.build: CMakeFiles/p8.dir/source.c.obj
-
-
-CMakeFiles/p8.dir/tridiagonal.c.obj: CMakeFiles/p8.dir/flags.make
-CMakeFiles/p8.dir/tridiagonal.c.obj: ../tridiagonal.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p8.dir/tridiagonal.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p8.dir\tridiagonal.c.obj   -c D:\Xavier\Repos\mnu1\p8\tridiagonal.c
-
-CMakeFiles/p8.dir/tridiagonal.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p8.dir/tridiagonal.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p8\tridiagonal.c > CMakeFiles\p8.dir\tridiagonal.c.i
-
-CMakeFiles/p8.dir/tridiagonal.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p8.dir/tridiagonal.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p8\tridiagonal.c -o CMakeFiles\p8.dir\tridiagonal.c.s
-
-CMakeFiles/p8.dir/tridiagonal.c.obj.requires:
-
-.PHONY : CMakeFiles/p8.dir/tridiagonal.c.obj.requires
-
-CMakeFiles/p8.dir/tridiagonal.c.obj.provides: CMakeFiles/p8.dir/tridiagonal.c.obj.requires
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/tridiagonal.c.obj.provides.build
-.PHONY : CMakeFiles/p8.dir/tridiagonal.c.obj.provides
-
-CMakeFiles/p8.dir/tridiagonal.c.obj.provides.build: CMakeFiles/p8.dir/tridiagonal.c.obj
+CMakeFiles/p8.dir/common.c.obj.provides.build: CMakeFiles/p8.dir/common.c.obj
 
 
-CMakeFiles/p8.dir/e1.c.obj: CMakeFiles/p8.dir/flags.make
-CMakeFiles/p8.dir/e1.c.obj: ../e1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/p8.dir/e1.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p8.dir\e1.c.obj   -c D:\Xavier\Repos\mnu1\p8\e1.c
+CMakeFiles/p8.dir/exercices.c.obj: CMakeFiles/p8.dir/flags.make
+CMakeFiles/p8.dir/exercices.c.obj: ../exercices.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/p8.dir/exercices.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\p8.dir\exercices.c.obj   -c D:\Xavier\Repos\mnu1\p8\exercices.c
 
-CMakeFiles/p8.dir/e1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p8.dir/e1.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p8\e1.c > CMakeFiles\p8.dir\e1.c.i
+CMakeFiles/p8.dir/exercices.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/p8.dir/exercices.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p8\exercices.c > CMakeFiles\p8.dir\exercices.c.i
 
-CMakeFiles/p8.dir/e1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p8.dir/e1.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p8\e1.c -o CMakeFiles\p8.dir\e1.c.s
+CMakeFiles/p8.dir/exercices.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/p8.dir/exercices.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p8\exercices.c -o CMakeFiles\p8.dir\exercices.c.s
 
-CMakeFiles/p8.dir/e1.c.obj.requires:
+CMakeFiles/p8.dir/exercices.c.obj.requires:
 
-.PHONY : CMakeFiles/p8.dir/e1.c.obj.requires
+.PHONY : CMakeFiles/p8.dir/exercices.c.obj.requires
 
-CMakeFiles/p8.dir/e1.c.obj.provides: CMakeFiles/p8.dir/e1.c.obj.requires
-	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/e1.c.obj.provides.build
-.PHONY : CMakeFiles/p8.dir/e1.c.obj.provides
+CMakeFiles/p8.dir/exercices.c.obj.provides: CMakeFiles/p8.dir/exercices.c.obj.requires
+	$(MAKE) -f CMakeFiles\p8.dir\build.make CMakeFiles/p8.dir/exercices.c.obj.provides.build
+.PHONY : CMakeFiles/p8.dir/exercices.c.obj.provides
 
-CMakeFiles/p8.dir/e1.c.obj.provides.build: CMakeFiles/p8.dir/e1.c.obj
+CMakeFiles/p8.dir/exercices.c.obj.provides.build: CMakeFiles/p8.dir/exercices.c.obj
 
 
 # Object files for target p8
 p8_OBJECTS = \
 "CMakeFiles/p8.dir/main.c.obj" \
-"CMakeFiles/p8.dir/source.c.obj" \
-"CMakeFiles/p8.dir/tridiagonal.c.obj" \
-"CMakeFiles/p8.dir/e1.c.obj"
+"CMakeFiles/p8.dir/common.c.obj" \
+"CMakeFiles/p8.dir/exercices.c.obj"
 
 # External object files for target p8
 p8_EXTERNAL_OBJECTS =
 
 p8.exe: CMakeFiles/p8.dir/main.c.obj
-p8.exe: CMakeFiles/p8.dir/source.c.obj
-p8.exe: CMakeFiles/p8.dir/tridiagonal.c.obj
-p8.exe: CMakeFiles/p8.dir/e1.c.obj
+p8.exe: CMakeFiles/p8.dir/common.c.obj
+p8.exe: CMakeFiles/p8.dir/exercices.c.obj
 p8.exe: CMakeFiles/p8.dir/build.make
 p8.exe: CMakeFiles/p8.dir/linklibs.rsp
 p8.exe: CMakeFiles/p8.dir/objects1.rsp
 p8.exe: CMakeFiles/p8.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking C executable p8.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=D:\Xavier\Repos\mnu1\p8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking C executable p8.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\p8.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -179,9 +153,8 @@ CMakeFiles/p8.dir/build: p8.exe
 .PHONY : CMakeFiles/p8.dir/build
 
 CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/main.c.obj.requires
-CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/source.c.obj.requires
-CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/tridiagonal.c.obj.requires
-CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/e1.c.obj.requires
+CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/common.c.obj.requires
+CMakeFiles/p8.dir/requires: CMakeFiles/p8.dir/exercices.c.obj.requires
 
 .PHONY : CMakeFiles/p8.dir/requires
 

@@ -1,0 +1,36 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+D:/Xavier/Repos/mnu1/p11/common.c
+stdlib.h
+-
+math.h
+-
+stdio.h
+-
+
+D:/Xavier/Repos/mnu1/p11/common.h
+
+D:/Xavier/Repos/mnu1/p11/e1.c
+common.h
+D:/Xavier/Repos/mnu1/p11/common.h
+
+D:/Xavier/Repos/mnu1/p11/exercices.c
+stdio.h
+-
+stdlib.h
+-
+common.h
+D:/Xavier/Repos/mnu1/p11/common.h
+
+D:/Xavier/Repos/mnu1/p11/exercices.h
+
+D:/Xavier/Repos/mnu1/p11/main.c
+exercices.h
+D:/Xavier/Repos/mnu1/p11/exercices.h
+

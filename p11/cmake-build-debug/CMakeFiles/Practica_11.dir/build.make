@@ -80,28 +80,28 @@ CMakeFiles/Practica_11.dir/main.c.obj.provides: CMakeFiles/Practica_11.dir/main.
 CMakeFiles/Practica_11.dir/main.c.obj.provides.build: CMakeFiles/Practica_11.dir/main.c.obj
 
 
-CMakeFiles/Practica_11.dir/source.c.obj: CMakeFiles/Practica_11.dir/flags.make
-CMakeFiles/Practica_11.dir/source.c.obj: ../source.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Practica_11.dir/source.c.obj"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Practica_11.dir\source.c.obj   -c D:\Xavier\Repos\mnu1\p11\source.c
+CMakeFiles/Practica_11.dir/common.c.obj: CMakeFiles/Practica_11.dir/flags.make
+CMakeFiles/Practica_11.dir/common.c.obj: ../common.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=D:\Xavier\Repos\mnu1\p11\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/Practica_11.dir/common.c.obj"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Practica_11.dir\common.c.obj   -c D:\Xavier\Repos\mnu1\p11\common.c
 
-CMakeFiles/Practica_11.dir/source.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Practica_11.dir/source.c.i"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p11\source.c > CMakeFiles\Practica_11.dir\source.c.i
+CMakeFiles/Practica_11.dir/common.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/Practica_11.dir/common.c.i"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E D:\Xavier\Repos\mnu1\p11\common.c > CMakeFiles\Practica_11.dir\common.c.i
 
-CMakeFiles/Practica_11.dir/source.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Practica_11.dir/source.c.s"
-	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p11\source.c -o CMakeFiles\Practica_11.dir\source.c.s
+CMakeFiles/Practica_11.dir/common.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/Practica_11.dir/common.c.s"
+	C:\MinGW\bin\gcc.exe  $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S D:\Xavier\Repos\mnu1\p11\common.c -o CMakeFiles\Practica_11.dir\common.c.s
 
-CMakeFiles/Practica_11.dir/source.c.obj.requires:
+CMakeFiles/Practica_11.dir/common.c.obj.requires:
 
-.PHONY : CMakeFiles/Practica_11.dir/source.c.obj.requires
+.PHONY : CMakeFiles/Practica_11.dir/common.c.obj.requires
 
-CMakeFiles/Practica_11.dir/source.c.obj.provides: CMakeFiles/Practica_11.dir/source.c.obj.requires
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/source.c.obj.provides.build
-.PHONY : CMakeFiles/Practica_11.dir/source.c.obj.provides
+CMakeFiles/Practica_11.dir/common.c.obj.provides: CMakeFiles/Practica_11.dir/common.c.obj.requires
+	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/common.c.obj.provides.build
+.PHONY : CMakeFiles/Practica_11.dir/common.c.obj.provides
 
-CMakeFiles/Practica_11.dir/source.c.obj.provides.build: CMakeFiles/Practica_11.dir/source.c.obj
+CMakeFiles/Practica_11.dir/common.c.obj.provides.build: CMakeFiles/Practica_11.dir/common.c.obj
 
 
 CMakeFiles/Practica_11.dir/e1.c.obj: CMakeFiles/Practica_11.dir/flags.make
@@ -155,7 +155,7 @@ CMakeFiles/Practica_11.dir/exercices.c.obj.provides.build: CMakeFiles/Practica_1
 # Object files for target Practica_11
 Practica_11_OBJECTS = \
 "CMakeFiles/Practica_11.dir/main.c.obj" \
-"CMakeFiles/Practica_11.dir/source.c.obj" \
+"CMakeFiles/Practica_11.dir/common.c.obj" \
 "CMakeFiles/Practica_11.dir/e1.c.obj" \
 "CMakeFiles/Practica_11.dir/exercices.c.obj"
 
@@ -163,7 +163,7 @@ Practica_11_OBJECTS = \
 Practica_11_EXTERNAL_OBJECTS =
 
 Practica_11.exe: CMakeFiles/Practica_11.dir/main.c.obj
-Practica_11.exe: CMakeFiles/Practica_11.dir/source.c.obj
+Practica_11.exe: CMakeFiles/Practica_11.dir/common.c.obj
 Practica_11.exe: CMakeFiles/Practica_11.dir/e1.c.obj
 Practica_11.exe: CMakeFiles/Practica_11.dir/exercices.c.obj
 Practica_11.exe: CMakeFiles/Practica_11.dir/build.make
@@ -179,7 +179,7 @@ CMakeFiles/Practica_11.dir/build: Practica_11.exe
 .PHONY : CMakeFiles/Practica_11.dir/build
 
 CMakeFiles/Practica_11.dir/requires: CMakeFiles/Practica_11.dir/main.c.obj.requires
-CMakeFiles/Practica_11.dir/requires: CMakeFiles/Practica_11.dir/source.c.obj.requires
+CMakeFiles/Practica_11.dir/requires: CMakeFiles/Practica_11.dir/common.c.obj.requires
 CMakeFiles/Practica_11.dir/requires: CMakeFiles/Practica_11.dir/e1.c.obj.requires
 CMakeFiles/Practica_11.dir/requires: CMakeFiles/Practica_11.dir/exercices.c.obj.requires
 

@@ -2,36 +2,6 @@
 #include <stdlib.h>
 #include <math.h>
 
-/*RESOL UNA MATRIU DIAGONAL BANDA*/
-#include <stdio.h>
-
-/*	(b	c	0	0	0)
-	(a	b	c	0	0)
-	(0	a	b	c	0)
-	(0	0	a	b	c)
-	(0	0	0	a	b)
-n = dimensio, (a,b,c) bandes diagonals vectors de dimensio (n,n+1,n), f = vector solucio inicial del sistema (on es guardaran les noves solucions), tol = tolerancia pel 0*/
-int d3_GERARD(int n, double *a, double *b, double *c, double *f, double tol) {
-
-    c[0] = c[0] / b[0];
-
-    for(int i = 1; i < n-1; i++) {
-        c[i] = c[i] / (b[i] - (c[i-1] * a[i-1]));
-    }
-
-    f[0] = f[0] / b[0];
-    for(int i = 1; i < n; i++) {
-        f[i] = (f[i] - (f[i-1] * a[i-1])) / (b[i] - (c[i-1] * a[i-1]));
-    }
-
-    for(int i = n-2; i > -1; i--) {
-        f[i] = f[i] - (c[i] * f[i+1]);
-    }
-
-    return 0;
-}
-
-
 /**
  * Solves for f in the tridiagonal system Mf = c
  * @param n Size of the tridiagonal matrix A, i.e. size of arrays a, b, c and f
@@ -62,13 +32,7 @@ void d3(int n, double *a, double *b, double *c, double *f, double tol) {
         f[i] -= c[i]*f[i + 1];
     }
 
-    printf("After d3\n");
-    for(int i = 0; i < n; i++) {
-        printf("f[%d] = %25.16lf\n", i, f[i]);
-    }
-
 }
-
 
 /**
  * Computes a natural cubic spline from the given (x, y) points and prints m+1 equidistant points of the spline in the
@@ -121,18 +85,6 @@ void natural_cubic_splines(int n, int m, double* x, double* y) {
         A[i] = (y[i+1] - y[i])/h[i] - h[i]*(M[i+1] - M[i])/6.;
     }
 
-
-    /* Old gerard code semiadapted; needs indexes of M reduced
-    B[0] = y[0];
-    A[0] = ((y[1] - y[0]) / h[0]) - (h[0] * M[0] / 6.);
-    for(int i = 1; i < n-1; i++) {
-        B[i] = y[i] - M[i-1]*h[i]*h[i]/6.;
-        A[i] = (y[i+1] - y[i])/h[i] - h[i]*(M[i] - M[i-1])/6.;
-    }
-    B[n-1] = y[n-1] - (M[n-2]*h[n-1]*h[n-1]/6.);
-    A[n-1] = (y[n] - y[n-1])/h[n-1] + h[n-1]*M[n-2]/6.;
-     */
-
     // Evaluation
     double z, eval;
 
@@ -156,36 +108,5 @@ void natural_cubic_splines(int n, int m, double* x, double* y) {
         printf("S(%25.16lf) = %25.16lf\n", xeval, S(xeval));
         xeval += heval;
     }
-
-    /* Gerard
-    // Primer punt
-    z = x[0];
-    eval = (M[0] * pow(z - x[0], 3)) / (6.0 * h[0]) + (A[0] * (z - x[0])) + B[0];
-    printf("%25.16lf %25.16lf\n", z, eval);
-
-    // Primer spline
-    for(int i = 0; i < m; i++) {
-        z = x[0] + ((x[1] - x[0]) * (i+1) / (m + 0.0));
-        eval = (M[0] * pow(z - x[0], 3)) / (6.0 * h[0]) + (A[0] * (z - x[0])) + B[0];
-        printf("%25.16lf %25.16lf\n", z, eval);
-    }
-
-    // Segon a penultim spline
-    for(int j = 1; j < n-1; j++) {
-        for(int i = 0; i < m; i++) {
-            z = x[j] + ((x[j+1] - x[j]) * (i+1) / (m + 0.0));
-            eval = (((M[j-1] * pow(x[j+1] - z, 3)) + (M[j] * pow(z - x[j], 3))) / (6.0 * h[j])) + (A[j] * (z - x[j])) + B[j];
-
-            printf("%25.16lf %25.16lf\n", z, eval);
-        }
-    }
-
-    // Ultim spline
-    for(int i = 0; i < m; i++) {
-        z = x[n-1] + ((x[n] - x[n-1]) * (i+1) / (m + 0.0));
-        eval = (M[n-2] * pow(x[n] - z, 3)) / (6.0 * h[n-1]) + (A[n-1] * (z - x[n-1])) + B[n-1];
-        printf("%25.16lf %25.16lf\n", z, eval);
-    }
-    */
 
 }

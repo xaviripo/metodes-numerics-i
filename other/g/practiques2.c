@@ -366,13 +366,15 @@ void p7_2equi(int n, int m) {
 	int i;
 
 	double feval(double x) {
-		return 1.0 / (1 + (25 * pow(x, 2)));
+        /*return 1.0 / (1 + (25 * pow(x, 2))); old line*/
+		return 1.0 / (1. + (25. * pow(x, 2.))); /*Edited by xaviripo 2017-01-12 11:00; added "." after numbers as requested by g*/
 	}
 
 	double* x = malloc(n * sizeof(double));
 	double* y = malloc(n * sizeof(double));
 	for(i = 0; i < n; i++) {
-		x[i] = -1 + (2.0*i/(n-1.0));
+        /*x[i] = -1.0 + (2.0*i/(n-1.0)); old line*/
+		x[i] = -1.0 + (2.0*i/(n-1.0)); /*Edited by xaviripo 2017-01-12 11:00; added "." after numbers as requested by g*/
 		y[i] = feval(x[i]);
 	}
 
@@ -401,13 +403,15 @@ void p7_2cheb(int n, int m) {
 	int i;
 
 	double feval(double x) {
-		return 1.0 / (1 + (25 * pow(x, 2)));
+        /*return 1.0 / (1 + (25 * pow(x, 2))); old line*/
+		return 1.0 / (1. + (25. * pow(x, 2.))); /*Edited by xaviripo 2017-01-12 11:00; added "." after numbers as requested by g*/
 	}
 
 	double* x = malloc(n * sizeof(double));
 	double* y = malloc(n * sizeof(double));
 	for(i = 0; i < n; i++) {
-		x[i] = -1 + (1 + (cos(M_PI * ((2*i)+1) / (2*n))));
+        /*x[i] = -1 + (1 + (cos(M_PI * ((2*i)+1) / (2*n)))); old line*/
+		x[i] = -1 + (1 + (cos(M_PI * ((2*i)+1) / (2*n)))); /*Edited by xaviripo 2017-01-12 11:00; added "." after numbers as requested by g*/
 		y[i] = feval(x[i]);
 	}
 

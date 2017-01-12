@@ -110,17 +110,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Practica_11
+# Target rules for targets named p11
 
 # Build rule for target.
-Practica_11: cmake_check_build_system
-	$(MAKE) -f CMakeFiles\Makefile2 Practica_11
-.PHONY : Practica_11
+p11: cmake_check_build_system
+	$(MAKE) -f CMakeFiles\Makefile2 p11
+.PHONY : p11
 
 # fast build rule for target.
-Practica_11/fast:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/build
-.PHONY : Practica_11/fast
+p11/fast:
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/build
+.PHONY : p11/fast
+
+common.obj: common.c.obj
+
+.PHONY : common.obj
+
+# target to build an object file
+common.c.obj:
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/common.c.obj
+.PHONY : common.c.obj
+
+common.i: common.c.i
+
+.PHONY : common.i
+
+# target to preprocess a source file
+common.c.i:
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/common.c.i
+.PHONY : common.c.i
+
+common.s: common.c.s
+
+.PHONY : common.s
+
+# target to generate assembly for a file
+common.c.s:
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/common.c.s
+.PHONY : common.c.s
 
 e1.obj: e1.c.obj
 
@@ -128,7 +155,7 @@ e1.obj: e1.c.obj
 
 # target to build an object file
 e1.c.obj:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/e1.c.obj
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/e1.c.obj
 .PHONY : e1.c.obj
 
 e1.i: e1.c.i
@@ -137,7 +164,7 @@ e1.i: e1.c.i
 
 # target to preprocess a source file
 e1.c.i:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/e1.c.i
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/e1.c.i
 .PHONY : e1.c.i
 
 e1.s: e1.c.s
@@ -146,7 +173,7 @@ e1.s: e1.c.s
 
 # target to generate assembly for a file
 e1.c.s:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/e1.c.s
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/e1.c.s
 .PHONY : e1.c.s
 
 exercices.obj: exercices.c.obj
@@ -155,7 +182,7 @@ exercices.obj: exercices.c.obj
 
 # target to build an object file
 exercices.c.obj:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/exercices.c.obj
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/exercices.c.obj
 .PHONY : exercices.c.obj
 
 exercices.i: exercices.c.i
@@ -164,7 +191,7 @@ exercices.i: exercices.c.i
 
 # target to preprocess a source file
 exercices.c.i:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/exercices.c.i
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/exercices.c.i
 .PHONY : exercices.c.i
 
 exercices.s: exercices.c.s
@@ -173,7 +200,7 @@ exercices.s: exercices.c.s
 
 # target to generate assembly for a file
 exercices.c.s:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/exercices.c.s
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/exercices.c.s
 .PHONY : exercices.c.s
 
 main.obj: main.c.obj
@@ -182,7 +209,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/main.c.obj
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -191,7 +218,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/main.c.i
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -200,35 +227,8 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/main.c.s
+	$(MAKE) -f CMakeFiles\p11.dir\build.make CMakeFiles/p11.dir/main.c.s
 .PHONY : main.c.s
-
-source.obj: source.c.obj
-
-.PHONY : source.obj
-
-# target to build an object file
-source.c.obj:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/source.c.obj
-.PHONY : source.c.obj
-
-source.i: source.c.i
-
-.PHONY : source.i
-
-# target to preprocess a source file
-source.c.i:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/source.c.i
-.PHONY : source.c.i
-
-source.s: source.c.s
-
-.PHONY : source.s
-
-# target to generate assembly for a file
-source.c.s:
-	$(MAKE) -f CMakeFiles\Practica_11.dir\build.make CMakeFiles/Practica_11.dir/source.c.s
-.PHONY : source.c.s
 
 # Help Target
 help:
@@ -236,9 +236,12 @@ help:
 	@echo ... all (the default if no target is provided)
 	@echo ... clean
 	@echo ... depend
-	@echo ... Practica_11
+	@echo ... p11
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... common.obj
+	@echo ... common.i
+	@echo ... common.s
 	@echo ... e1.obj
 	@echo ... e1.i
 	@echo ... e1.s
@@ -248,9 +251,6 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
-	@echo ... source.obj
-	@echo ... source.i
-	@echo ... source.s
 .PHONY : help
 
 

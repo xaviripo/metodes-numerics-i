@@ -80,25 +80,19 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/e1.c">
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/common.c">
 			<Option target="p8"/>
 		</Unit>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/e1.h">
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/common.h">
+			<Option target="p8"/>
+		</Unit>
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/exercices.c">
+			<Option target="p8"/>
+		</Unit>
+		<Unit filename="D:/Xavier/Repos/mnu1/p8/exercices.h">
 			<Option target="p8"/>
 		</Unit>
 		<Unit filename="D:/Xavier/Repos/mnu1/p8/main.c">
-			<Option target="p8"/>
-		</Unit>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/source.c">
-			<Option target="p8"/>
-		</Unit>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/source.h">
-			<Option target="p8"/>
-		</Unit>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/tridiagonal.c">
-			<Option target="p8"/>
-		</Unit>
-		<Unit filename="D:/Xavier/Repos/mnu1/p8/tridiagonal.h">
 			<Option target="p8"/>
 		</Unit>
 		<Unit filename="D:/Xavier/Repos/mnu1/p8/CMakeLists.txt">

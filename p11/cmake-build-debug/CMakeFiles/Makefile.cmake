@@ -49,5 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Practica_11.dir/DependInfo.cmake"
+  "CMakeFiles/p11.dir/DependInfo.cmake"
   )
