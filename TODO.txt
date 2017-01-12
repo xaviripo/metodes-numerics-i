@@ -1,5 +1,0 @@
-- Normalize output format (e.g. phrases surrounded with {} a la "{Integral} = 4", tabulations before "=", etc.)
-- p8: fix
-- p11: use triangular matrix instead of recursion
-- p11: use better initial approximations (see observation at end of practice statement)
-- Put all practices together?
